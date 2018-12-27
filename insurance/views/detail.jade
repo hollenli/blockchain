@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title 
+    link(rel='stylesheet' href='/stylesheets/detail.css')
+  body
+    div#box
+      p Account：#{user.number}
+      p blance：#{user.blance}
+      form(method="post")
+        button(type="submit" name="signout" value="out") Log out
+
+    

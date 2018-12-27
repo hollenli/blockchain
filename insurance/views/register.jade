@@ -1,0 +1,26 @@
+//register.jade
+
+doctype html
+html
+  head
+    title Sign up
+    link(rel='stylesheet', href='/stylesheets/register.css')
+    script(type="text/javascript" src="/javascripts/md5.js")
+    script(type="text/javascript" src="/javascripts/check.js")
+    script(type="text/javascript" src="/javascripts/jquery.js")
+  body
+    form#box(method="post")
+      p#title Sign up
+
+      input.textinput(type="text" name="username" value=user.username placeholder="username")
+      input.textinput(type="password" name="password" placeholder="password")
+      input#cpw.textinput(type="password" placeholder="check password")
+      label.lb #[input(type="radio" name="character" value="insurance")] Insurance
+      label.lb #[input(type="radio" name="character" value="hospital")] Hospital 
+      label.lb #[input(type="radio" name="character" value="person")] Person
+
+      button.blue(type="submit" name="submitData" value="submit") 提交
+      a(href="/")
+        button(type="button") 返回登陆
+
+

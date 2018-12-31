@@ -1,0 +1,44 @@
+body {
+	background-size: 100%;
+}
+
+#box {
+	text-align: center;
+	border: solid 1px gray;
+	background-color: black;
+}
+
+
+p#account,p#balance {
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+
+button {
+	width: 60px;
+	height: 22px;
+	font-size: 15px;
+	vertical-align: bottom;
+}
+
+button:hover {
+	background-color: gray;
+}
+
+#main {
+	margin: 0px auto;
+	width: 800px;
+	height: 500px;
+	border: solid 1px gray;
+}
+
+#message {
+	width: 800px;
+	height: 50px;
+	border: solid 1px gray;
+}
+
+.funtip {
+	margin: 5px auto;
+}

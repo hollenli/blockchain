@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    title 
+    link(rel='stylesheet' href='/stylesheets/detail.css')
+    script(type="text/javascript" src="/javascripts/jquery.js")
+    script(type="text/javascript" src="/javascripts/detail.js")
+  body
+    div#box
+      p#account Account：
+        span #{account}
+      p#balance Balance：
+        span 
+      a(href="/signin")
+        button(type="button") Signin
+      form#signout(method="post")
+        button(type="submit" name="signout" value="submit") Logout
+    
+    div#main
+      div#message
+      p.funtip create a insurance:
+      form#create(method="post")
+        input#pri(type="text" placeholder="price")
+        input#per(type="text" placeholder="percentage")
+        button(type="button") Create
+      p.funtip set the price of insurance you owned or get the price of any insurance:
+      form#price(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#pri(type="text" placeholder="new price")
+        button.get(type="button") Get
+        button.set(type="button") Set
+      p.funtip set the percentage of insurance you owned or get the perventage of any insurance:
+      form#percentage(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#per(type="text" placeholder="new percentage")
+        button.get(type="button") Get
+        button.set(type="button") Set
+      p.funtip paticipate in a insurance as a hospital:
+      form#addhospital(method="post")
+        input#add(type="text" placeholder="address of contract")
+        button(type="button") add
+      p.funtip pay the price to paticipate in a insurance as a person:
+      form#addperson(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#val(type="text" placeholder="payment amount")
+        button(type="button") add
+      p.funtip present a bill to someone
+      form#givebill(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#to(type="text" placeholder="address of patient")
+        input#val(type="text" placeholder="payment amount")
+        button(type="button") bill
+      p.funtip check your bills:
+      form#checkfee(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#to(type="text" placeholder="address of hospital")
+        button(type="button") check
+      p.funtip pay your bills:
+      form#pay(method="post")
+        input#add(type="text" placeholder="address of contract")
+        input#to(type="text" placeholder="address of hospital")
+        input#val(type="text" placeholder="payment amount")
+        button(type="button") pay

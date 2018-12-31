@@ -1,0 +1,56 @@
+body {
+  background-size: 100%;
+}
+
+#box {
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border: solid 2px gray;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,1);
+}
+
+#title {
+  margin: 20px auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+.textinput {
+  margin: 10px auto;
+  width: 400px;
+  height: 40px;
+  font-size: 25px;
+  border-color: gray;
+  border-width: 0px 0px 1px 0px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.lb {
+	margin: 0px 5px;
+	font-size: 16px;
+}
+
+#account {
+  height: 40px;
+}
+
+button {
+  font-size: 18px;
+  color: black;
+  margin: 5px 100px;
+  width: 200px;
+  height: 40px;
+  border-width: 0px;
+  background-color: rgba(200,200,200,0.6);
+}
+
+button.blue {
+  background-color: rgba(3, 155, 229, 1);
+}
+
+button:hover {
+  background-color: rgba(0,100,200,0.5);
+}

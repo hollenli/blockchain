@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title 注册
+    link(rel='stylesheet', href='/stylesheets/signin.css')
+    script(type="text/javascript" src="/javascripts/signin.js")
+    script(type="text/javascript" src="/javascripts/jquery.js")
+  body
+    form#box(method="post")
+      p#title Log in
+      input#username(type="text" name="username" placeholder="username")
+      div.tip
+        p#unTip #{errUn}
+
+      input#password(type="password" name="password" placeholder="password")
+      div.tip
+        p#pwTip #{errPw}
+
+      button.blue(type="submit" name="signin" value="submit") 登陆
+      a(href="/regist")
+        button(type="button") 立即注册

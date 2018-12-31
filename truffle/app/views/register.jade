@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Sign up
+    link(rel='stylesheet', href='/stylesheets/register.css')
+    script(type="text/javascript" src="/javascripts/signup.js")
+    script(type="text/javascript" src="/javascripts/jquery.js")
+  body
+    form#box(method="post")
+      p#title Sign up
+
+      input#pw.textinput(type="password" name="password" placeholder="password")
+      input#cpw.textinput(type="password" placeholder="check password")
+      div#account #{account}
+
+      button.blue(type="submit" name="signup" value="submit") 提交
+      a(href="/signin")
+        button(type="button") 返回登陆
+
+
